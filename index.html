@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Investigacion Aplicada</title>
+</head>
+<body>
+    <header>    
+        <nav>
+            <div class="imgTit">
+                <img src="css/img/jsLogo.png" alt="JS LOGO">
+            </div>
+            <ul class="links">
+                <li class="ancla"><a href="#buenas-practicas">LocalStroge</a></li>
+                <li class="ancla"><a href="#linting">SessionStroge</a></li>
+                <li class="ancla"><a href="#funciones-flecha">IndexedDB</a></li>
+            </ul>
+        </nav>
+        <section class="Tit">
+            <h1>Investigacion Aplicada</h1>
+        </section>
+    </header>
+   <main>
+        <a id="buenas-practicas"></a></br></br>
+        <section class="one">  
+            <h1>LocalStrage</h1>
+            <article>   
+                <p>Es un objeto de almacenaje Web. Permite guardar una calve junto con el valor de esta en el navegador. Lo interesante de LocalStroge es que la supervivencia de los datos es hasta un reinicio completo del navegador. LocalStorage trabaja de manera similar a las cookies. Sin embargo, cuenta con un espacio de solo 5mb, y al trabajar de manera local no hace peticiones de servidor. Local Storage solo puede almacenar Strings en sus valores. Es importante saber que los datos guardados en localStorage pueden ser accedidos por cualquier script. </p>
+            </article>
+            <h1>Sintaxis.</h1>
+            <article>   
+                <p>Agregando un dato a nuestro LocalStorage</p>
+                <img src="css/img/setLocalStorage.png" alt="sintaxis1">
+                <br>
+                <p>Obteniendo un dato de nuestro LocalStorage</p>
+                <img src="css/img/getLocalStorage.png" alt="sintaxis1">
+                <br>
+                <p>Removiendo un dato de nuestro LocalStorage</p>
+                <img src="css/img/getLocalStorage.png" alt="sintaxis1">
+            </article>
+            <h1>Ventajas</h1><br>
+            <article>   
+                <ul class="list2">
+                    <li class="check">LocalStorage utiliza  entre 5 y 10MB dependiendo del navegador web el cual estemos utilizando .</li>
+                    <li class="check">No existe una caducidad para localStorage, la información quedará almacenada hasta que se elimine expresamente. Aunque se cierre el navegador.</li>
+                </ul>
+            </article>
+
+            <h1>Desventajas</h1><br>
+            <article>   
+                <ul class="list2">
+                    <li class="check">Sólo se puede almacenar cadenas de texto. O sea, no se puede guardar booleanos, tampoco guardar arrays, objetos, float. solo se guardan strings.
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <a id="linting"></a></br></br>
+        <section class="two">   
+            <h1 class="titulo">SessionStorage</h1>
+            <article>   
+                <p>Permite acceder a un objeto storage asociado a la sesión actual. la información almacenada en esta se elimina al finalizar la sesión de la página. La sesión de la página perdura mientras el navegador se encuentra abierto, y se mantiene por sobre las recargas de reaperturas de la página.</p>
+                <p>El SessionStorage tiene una gran similitud con el localStorage lo único que los diferencia es que la diferencia entre éstas dos es que localStorage almacena la información de forma indefinida o hasta que se decida limpiar los datos del navegador y sessionStorage almacena información mientras la pestaña donde se esté utilizando siga abierta, una vez cerrada, la información se elimina.</p>
+            </article>
+            <h1>Sintaxis</h1>
+            <article>   
+                <p>Agregando un dato a nuestro SessionStorage</p>
+                <img src="css/img/setSessionStorage.png" alt="sintaxis1">
+                <br>
+                <p>Obteniendo un dato de nuestro LocalStorage</p>
+                <img src="css/img/getSessionStorage.png" alt="sintaxis1" >
+                <br>
+            </article>
+            <h1>Ventajas</h1><br>
+            <article>   
+                <ul class="list2">
+                    <li class="check">El acceso a la información es rápido, dado que los datos se almacenan de la manera llave-valor</li>
+                </ul>
+            </article>
+
+            <h1>Desventajas</h1><br>
+            <article>   
+                <ul class="list2">
+                    <li class="check">Los valores se pierden una vez que se cierra la ventana</li>
+                    <li class="check">Los valores que almacena no pueden ser compartidos entre más de una ventana</li>
+                </ul>
+            </article>
+            <br>
+        </section>
+        <a id="funciones-flecha"></a></br></br>
+        <section class="one">
+            <h1 class="">IndexedDB</h1>
+            <article>
+            <p>
+                Es una manera de almacenar datos dentro del navegador del usuario. Debido a que permite la creación de aplicaciones con habilidades de consulta enriquecidas, con independencia de la disponibilidad de la red, esta es una base construida dentro del navegador, mucho más potente que localStorage. Este almacena todo tipo de valores por claves, soporta consultas de rango por clave y transacciones para confidencialidad, de igual forma este puede almacenar mucho mayor volumen de datos que localStorage
+            </p>
+            </article>
+            <h1>Sintaxis</h1>
+            <article>   
+                <p>Sintaxis para empezar a trabajar con indexedDB:</p>
+                <p>Let openRequesst  = indexedDB.open(name, version);</p>
+                <p>Name = nombre de la base de datos</p>
+                <p>Version = entero positivo, predeterminado en 1.</p>
+                <p>En el ejemplo presentado a continuación podemos observar que es una estructura de almacenamiento en la cual muestra las diversas formas de definir claves primarias en los almacenes de los objetos. </p>
+                <img src="css/img/indexedDb.png" alt="sintaxis1" >
+            </article>
+            <h1>Ventajas</h1><br>
+            <article>   
+                <ul class="list2">
+                    <li class="check">Nos permite crear una base de datos de un almacenamiento ilimitado.</li>
+                    <li class="check">IndexedDB tiene un mecanismo integrado de "control de versiones de esquema", ausente en las bases de datos del lado del servidor a diferencia de otras bases de datos .</li>
+                </ul>
+            </article>
+
+            <h1>Desventajas</h1><br>
+            <article>   
+                <ul class="list2">
+                    <li class="check">Es que no esta soportada para todos los navegadores y que son pocos los cuales toman esta base de datos dentro del navegador </li>
+                </ul>
+            </article>
+        </section>
+
+   </main> 
+   <footer>
+        <div class="foot1">
+        <p>Desarrollo de software</p> 
+        <img src="data:image/png;base64,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" alt="cdb">
+        </div>  
+        <div class="alumnos">
+        <p>Cristian Omar Pineda Campos</p> 
+        <p>Victor Eduardo Reyna Montecino</p> 
+        <p>Angel Isaias Rodriguez Pimentel</p> 
+        <p>Rodrigo Wilfredo Sosa Castellanos</p> 
+        <p>Fernando Josue Torres Lara</p> 
+        </div>
+   </footer>
+</body>
+</html>
