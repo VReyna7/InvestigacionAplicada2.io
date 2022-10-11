@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/session.css">
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <title>Guardar Datos</title>
+</head>
+<body>
+    <div class="div-form" id="divForm">
+      <form class="colorito" id="colorito">
+        <label for="colorito" class="text-white fs-5">Guarda Tus Datos</label>
+        <div class="form-group text-white">
+          <label for="exampleInputEmail1">Guarda Tu correo</label>
+          <input type="text" class="form-control" id="correo" autocomplete="off"  name="mail" required>
+        </div>
+        <div class="form-group text-white">
+          <label for="exampleInputPassword1">Guarda Tu nombre</label>
+          <input type="text" class="form-control" id="nombre" autocomplete="off" placeholder="" >
+        </div>
+        <div class="form-group text-white">
+          <label for="exampleInputPassword1">Guarda tu Edad</label>
+          <input type="text" class="form-control" id="edad" autocomplete="off" placeholder="" >
+        </div>
+        <input type="button" class="btn btn-primary mx-auto" value="Guardar" id="guardar">
+      </form>
+   </div>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <div class="div" id="divsito">
+      <div class="colorito">
+        <h1 class="text-white fs-5">BIENVENIDO</h1>
+        <h2 class="text-white fs-5" id="nombreH2"></h2>
+        <h2 class="text-white fs-5" id="emailH2"></h2>
+        <h2 class="text-white fs-5" id="numeroH2"></h2>
+      </div>
+    </div>
+    <script src="../js/SessionStoreVeri.js"></script>
+    <script src="../js/SessionStorage.js"></script>
+</body>
+</html>

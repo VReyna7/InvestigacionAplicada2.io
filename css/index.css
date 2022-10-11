@@ -297,6 +297,35 @@ section>h1{
     font-size: 1.2em;
     text-decoration: underline;
 }
+.botonsitos{
+    background-color: var(--primari-color);
+    padding: 20px;
+    border-radius: 16px;
+    border: none;
+    font-size: 20px;
+    transition: all 2s;
+}
+
+.botonsitosr{
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 16px;
+    border: none;
+    font-size: 20px;
+    transition: all 2s;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.botonsitos:hover{
+    width: 200px;
+    height: 70px;
+}
+
+.botonsitosr:hover{
+    width: 200px;
+    height: 70px;
+}
 
 footer{
     background-color: var( --primari-color);
