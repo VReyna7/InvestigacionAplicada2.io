@@ -1,0 +1,35 @@
+*{
+    font-family: arial;
+}
+
+body{
+    background-color: cadetblue;
+}
+.contenedor{
+    margin: 15% auto;
+    padding: 20px;
+    background-color: lightblue;
+    border-radius: 5px;
+    width: fit-content;
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor h2{
+    text-align: center;
+}
+
+#resultado{
+    color: darkred;
+}
+
+#btnAgregar{
+    margin-top: 20px;
+    background-color: rgb(23, 175, 23);
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    border: 0;
+    font-size: 0.8em;
+}
