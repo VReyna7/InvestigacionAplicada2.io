@@ -33,3 +33,7 @@ body{
     border: 0;
     font-size: 0.8em;
 }
+
+#btnAgregar:hover {
+    background-color: green;
+}
