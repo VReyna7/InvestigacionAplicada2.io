@@ -1,3 +1,4 @@
+//EJEMPLO INDEX DB
 window.addEventListener('load', ()=>{
     let baseDatos;
     //Creando Base de Datos

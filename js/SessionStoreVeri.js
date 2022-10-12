@@ -1,3 +1,4 @@
+//VERIFICACION DE EJEMPLO DE SESSIONSTORAGE
 if(sessionStorage.getItem('display')){
     let estiloCorreo = document.getElementById('correo');
     let estiloNombre = document.getElementById('nombre');
