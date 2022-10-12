@@ -1,3 +1,4 @@
+//Ejemplo de LocalStorage para La investigacion Aplicada de DAW
 
 const inputColor = document.getElementById('inputColor');
 const body = document.body;
