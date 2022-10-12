@@ -1,4 +1,4 @@
-
+//Ejemplo de Session Storage para la Investigacion aplicada 2
 const boton = document.getElementById('guardar');
 
 
